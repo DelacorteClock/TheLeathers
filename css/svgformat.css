@@ -1,0 +1,31 @@
+svg {
+    display: block;
+    margin: auto;
+    max-width: 75vw;
+}
+
+.plane {
+    animation: 5s planemove infinite linear;
+}
+
+#rect7 {
+    animation: 10s skydarken alternate infinite linear;
+}
+
+@keyframes planemove {
+  from {
+    transform: translate(-500px, -40px);
+  }
+  to {
+    transform: translate(1600px, -40px);
+  }
+}
+
+@keyframes skydarken {
+    0% {
+        fill: #3fcbf3;
+    }
+    100% {
+        fill: #0f3da2;
+    }
+}
